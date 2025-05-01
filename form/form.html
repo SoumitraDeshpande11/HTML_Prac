@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Registration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="form-wrapper">
+    <div class="form-tabs">
+      <input type="radio" name="tab" id="login-tab" checked>
+      <input type="radio" name="tab" id="register-tab">
+      
+      <div class="tabs">
+        <label for="login-tab">Login</label>
+        <label for="register-tab">Register</label>
+      </div>
+
+      <!-- Login Form -->
+      <form class="form login-form" action="#">
+        <h2>Login</h2>
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" name="email" required>
+
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="password" required>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <!-- Registration Form -->
+      <form class="form register-form" action="#">
+        <h2>Registration</h2>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="userid">User ID</label>
+        <input type="text" id="userid" name="userid" required>
+
+        <label for="reg-password">Password</label>
+        <input type="password" id="reg-password" name="password" required>
+
+        <label for="reg-email">Email</label>
+        <input type="email" id="reg-email" name="email" required>
+
+        <label>Gender</label>
+        <div class="gender">
+          <label><input type="radio" name="gender" value="male" required> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
